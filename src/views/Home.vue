@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <div class="ui grid">
+    <div class="ui grid container">
       <div class="two wide column"></div>
 
       <div class="center aligned twelve wide column">
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="ui grid">
+    <div class="ui grid container">
       <div class="two wide column"></div>
       <div class="twelve wide column">
         <div class="sections">
