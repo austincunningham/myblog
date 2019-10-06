@@ -1,15 +1,15 @@
 <template>
 <div class="bar">
     <div class="ui grid">
-      <div class="six wide column"></div>
-      <div class="four wide column">
+      <div class="five wide column"></div>
+      <div class="six wide column">
         <a href="https://austincunningham.ddns.net">
           <button class="ui positive basic fluid button">
             <a class="item">Home <i class="home icon"></i> </a>
           </button>
         </a>
       </div>
-      <div class="six wide column"></div>
+      <div class="five wide column"></div>
     </div>
 </div>
 </template>
