@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="ui padded segment">
+    <!-- <div class="ui segment"> --><div>
         <div class="ui floating success message" id=cookiemessage>
           <i class="close icon"></i>
           <div class="header">
