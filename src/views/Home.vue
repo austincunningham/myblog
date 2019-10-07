@@ -49,7 +49,7 @@
                 <div class="active content">
                   <div class="section" v-for="entry in sort(entries[section])" :key="entry.id">
                     <div class="ui raised segment">
-                      <img class="ui medium image" v-bind:src="`/images/${entry.id}.png`" />
+                      <img class="ui large image" v-bind:src="`/images/${entry.id}.png`" />
                       <div
                         class="entry"
                         v-on:mouseover="onHover=true"
@@ -103,7 +103,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 0px 0 0;
   color: #42b883;
 }
 ul {
