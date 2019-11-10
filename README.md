@@ -16,6 +16,7 @@ e.g. test.md in 2019 directory would mean you need to add to the 2019 array
 }
 ]
 ```
+- To add a homepage image add an image the same name file name as the markdown file e.g. test.png to the `public/images` directory
 - commit and push your changes
 - run `./deploy.sh`
 

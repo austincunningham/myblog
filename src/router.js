@@ -6,6 +6,7 @@ import BlogEntries from './static/bloglist.json';
 Vue.use(Router)
 
 const blogRoutes = Object.keys(BlogEntries).map(section => {
+  console.log(`${section}`)
   const children = BlogEntries[section].map(child => ({
     path: child.id,
     name: child.id,

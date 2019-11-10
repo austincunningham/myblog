@@ -29,6 +29,12 @@
             "date": "Sept 2, 2019",
             "title": "Debug Kubernetes Operator-sdk Locally Using Vscode",
             "description": "How to Debug Kubernetes Operator-sdk Locally Using Vscode"
+        },
+        {
+            "id": "specifygolangtestcoverage",
+            "date": "Nov 8, 2019",
+            "title": "Specify what appears in Golang test coverage ",
+            "description": "How to Specify what appears in Golang test coverage for Kubernetes Operator-sdk"
         }
 
     ],
