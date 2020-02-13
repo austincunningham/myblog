@@ -5,6 +5,12 @@
             "date": "Jan 14, 2020",
             "title": "Debug Kubernetes Operator-sdk locally in Goland",
             "description": "How to setup the debug for the operator-sdk in Goland"
+        },
+        {
+            "id": "gitlogprettyprint",
+            "date": "Jan 15, 2020",
+            "title": "Git log pretty print aliases",
+            "description": "Git log pretty print aliases"
         }
     ],
     "2019":[
