@@ -16,6 +16,8 @@ You can run the operator-sdk locally, and point it at the namespace for your ope
 ```bash
 operator-sdk up local --namespace=integreatly-operator
 ```
+> *NOTE*: command changed with v0.15.0 `operator-sdk run --local --namespace=integreatly-operator`
+
 ![](https://cdn-images-1.medium.com/max/800/1*x6u0-nf6g6hYKI0_q4JIcQ.gif)
 
 What this means that instead of having to build a container image and push it to a app registry like quay.io or dockerhub.com, you can just use your local code base as the source instead of a container image and use it to deploy your operator to your Openshift 4 cluster. 

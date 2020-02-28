@@ -38,6 +38,8 @@ INFO[0000] Using namespace integreatly-operator.
 INFO[0000] Delve debugger enabled with args [--listen=:2345 --headless=true --api-version=2 exec build/_output/bin/integreatly-operator-local --] 
 API server listening at: [::]:2345
 ```
+> *NOTE*: command changed with v0.15.0 `operator-sdk run --local --namespace=integreatly-operator`
+
 Click on `Run\Debug 'whatYouCallYourGoRemote'`
  
 
