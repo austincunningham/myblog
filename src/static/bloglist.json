@@ -16,7 +16,13 @@
             "id": "jqwhatilearnedtoday",
             "date": "Mar 22, 2020",
             "title": "JQ what I learned today",
-            "description": "jq tutorial on basic filtering and more complexe features"
+            "description": "jq tutorial on basic filtering and more complex features"
+        },
+        {
+            "id": "changekeycloakdockertheme",
+            "date": "May 19, 2020",
+            "title": "Change Login Theme in Keycloak Docker image",
+            "description": "change the login theme in the Keycloak docker image"
         }
     ],
     "2019":[
