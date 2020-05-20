@@ -27,11 +27,11 @@ Create a directory for your theme in the container
 ```bash
 mkdir /opt/jboss/keycloak/themes/raincatcher-theme
 ```
-I blogged about creating a custom theme [here](https://austincunningham.ddns.net/2017/themekeycloak) so I have a git repo with a theme so I cloned it
+I blogged about creating a custom theme [here](https://austincunningham.ddns.net/2017/themekeycloak) so I have a git repo with a theme so I cloned it to my local machine
 ```bash
 git clone https://github.com/austincunningham/raincatcher-keycloak-theme.git
 ```
-Copied the contents of the theme directory to the new directory on the running container
+Copied the contents of the theme directory from my local machine to the new directory on the running container
 ```bash
 docker cp raincatcher-keycloak-theme/. 47dd5c82b073:/opt/jboss/keycloak/themes/raincatcher-theme
 ```
@@ -40,6 +40,7 @@ Restart the container
 docker restart 47dd5c82b073
 ```
 You should be able to select the image from the drop down once the container restarts
+
 ![](https://miro.medium.com/max/1400/1*MWi1EcA2pd6sSNA_-H1u5A.png)
 
 Exit the `docker exec`
