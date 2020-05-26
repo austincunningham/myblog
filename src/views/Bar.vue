@@ -1,8 +1,8 @@
 <template>
 <div class="bar">
     <div class="ui grid container">
-      <div class="five wide column"></div>
-      <div class="six wide column">
+      <div class="two wide column"></div>
+      <div class="twelve wide column">
         <a href="https://austincunningham.ddns.net">
           <button class="ui positive basic fluid button">
             <a class="item">Home <i class="home icon"></i> </a>
