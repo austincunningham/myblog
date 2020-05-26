@@ -1,6 +1,6 @@
 <template>
 <div class="bar">
-    <div class="ui grid">
+    <div class="ui grid container">
       <div class="five wide column"></div>
       <div class="six wide column">
         <a href="https://austincunningham.ddns.net">
