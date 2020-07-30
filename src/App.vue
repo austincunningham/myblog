@@ -13,9 +13,9 @@
             <a href="https://policies.google.com/technologies/cookies"><strong>Learn More</strong></a>
           </p>
         </div>
-      <bar/>
-      <router-view></router-view>
     </div>
+  <bar/>
+  <router-view></router-view>
   </div>
 </template>
 
