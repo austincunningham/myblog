@@ -1,6 +1,12 @@
 {
     "2020":[
         {
+            "id": "awssimulatekillingavailabilityzone",
+            "date": "Oct 1, 2020",
+            "title": "AWS simulate killing an Availability Zone",
+            "description": "How to setup to use the aws cli to simulate a downed Availability Zone"
+        },
+        {
             "id": "operatorgoland",
             "date": "Jan 14, 2020",
             "title": "Debug Kubernetes Operator-sdk locally in Goland",
