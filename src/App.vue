@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="blank"> -- </div>
     <div class="ui grid container">
         <div class="ui floating success message" id=cookiemessage>
           <i class="close icon"></i>
