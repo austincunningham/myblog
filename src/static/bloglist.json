@@ -1,4 +1,12 @@
 {
+    "2021":[
+        {
+            "id": "operatorv1vscode",
+            "date": "April 12, 2021",
+            "title": "Debug Kubernetes Operator-sdk v1.0.0 Locally Using Vscode",
+            "description": "How to Debug Kubernetes Operator-sdk v1.0.0 Locally Using Vscode"
+        }
+    ],
     "2020":[
         {
             "id": "awssimulatekillingavailabilityzone",
