@@ -47,11 +47,7 @@ Add an env for WATCH_NAMESPACE and  the following args to the configuration so i
             "program": "${workspaceFolder}",
             "env": {
                 "WATCH_NAMESPACE": "your-operator-namespace",                
-            },
-            "args": [
-                "--kubeconfig",
-                "${workspaceFolder}/TMP_SA_KUBECONFIG",
-            ]
+            }
         }
     ]
 }
@@ -61,6 +57,6 @@ Debug should now work as expected
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ciihpoifjs6fv9ytveg5.gif)
 
-Thanks goes to [Sergio Franco Garcia](https://github.com/sergioifg94) for sharing this with me. 
+Thanks goes to [Oleg Matskiv](https://github.com/matskiv) for sharing this with me. 
 
 
