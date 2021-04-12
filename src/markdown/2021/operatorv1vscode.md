@@ -33,7 +33,7 @@ You should get the following launch.json
 }
 ```
 
-Add an env for WATCH_NAMESPACE and  the following args to the configuration so it looks like 
+Add an env for WATCH_NAMESPACE to the configuration so it looks like 
 
 ```json
 {
