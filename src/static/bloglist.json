@@ -5,6 +5,12 @@
             "date": "April 12, 2021",
             "title": "Debug Kubernetes Operator-sdk v1.0.0 Locally Using Vscode",
             "description": "How to Debug Kubernetes Operator-sdk v1.0.0 Locally Using Vscode"
+        },
+        {
+            "id": "operatorv1goland",
+            "date": "April 14, 2021",
+            "title": "Debug Kubernetes Operator-sdk v1.0.0 Locally Using Goland",
+            "description": "How to Debug Kubernetes Operator-sdk v1.0.0 Locally Using Goland"
         }
     ],
     "2020":[
