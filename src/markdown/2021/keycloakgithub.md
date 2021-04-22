@@ -9,7 +9,7 @@ First what is meant by by Identity provider? it's allowing a third party to hand
 
 Setting up idp is well documented [here](https://www.keycloak.org/docs/latest/server_admin/#social-identity-providers). 
 
-In this example I will use Github. I have a previous blog detailing how to setup an [Express app with Keycloak](https://austincunningham.ddns.net/2017/keycloakexpress). This basically cover setting up a keycloak realm , client,  user, and adding the keycloak.json to your express app and using the [keycloak-connect module](https://www.npmjs.com/package/keycloak-connect). 
+In this example I will use Github. I have a previous blog detailing how to setup an [Express app with Keycloak](https://austincunningham.ddns.net/2017/keycloakexpress). This basically covers setting up a keycloak realm , client,  user, and adding the keycloak.json to your express app and using the [keycloak-connect module](https://www.npmjs.com/package/keycloak-connect). 
 
 Once you have your app setup with Keycloak you can add an identity provider. 
 
