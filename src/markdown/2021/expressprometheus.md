@@ -292,6 +292,9 @@ oc apply -f clusterRoleBinding.yaml
 You should be able to access the route the default namespace
 ```bash
 oc get routes 
+NAME          HOST/PORT                              PATH   SERVICES      PORT   TERMINATION   WILDCARD
+example-app   example-app-default.apps-crc.testing          example-app   web                  None
+prometheus    prometheus-default.apps-crc.testing           prometheus    web                  None
 ``` 	
 You can open the Prometheus UI by adding a http:// to the Prometheus HOST/PORT returned from the oc get routes command
 ![prometheus UI](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yquddzw2fh85ivwn0uj3.png)
