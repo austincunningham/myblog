@@ -17,6 +17,12 @@
             "date": "April 21, 2021",
             "title": "Setting up Keycloak using a Github Identity provider in Express",
             "description": "Setting up Keycloak using a Github Identity provider in Express"
+        },
+        {
+            "id": "expressprometheus",
+            "date": "July 29, 2021",
+            "title": "Setting up Keycloak using a Github Identity provider in Express",
+            "description": "Get Prometheus Metrics from a Express.js app"
         }
     ],
     "2020":[
