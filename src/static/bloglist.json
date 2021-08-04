@@ -21,8 +21,14 @@
         {
             "id": "expressprometheus",
             "date": "July 29, 2021",
-            "title": "Setting up Keycloak using a Github Identity provider in Express",
+            "title": "Get Prometheus Metrics from a Express.js app",
             "description": "Get Prometheus Metrics from a Express.js app"
+        },
+        {
+            "id": "expressgrafana",
+            "date": "August 04, 2021",
+            "title": "Use Grafana to plot Express.js apps Metrics",
+            "description": "Use Grafana to plot Express.js apps Metrics"
         }
     ],
     "2020":[
