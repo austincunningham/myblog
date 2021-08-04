@@ -311,7 +311,7 @@ Then check the `Status\Targets` should see the following targets up
 You also should be able to see metrics from example-app in the graph tab
 ![screenshot of the graph tab showing example-apps metrics](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pa6yziyxuy853xhk2hzo.png)
 
-That it I may do a follow up on setting up Grafana to use these metrics
+That it I may do a follow up on (setting up Grafana)[https://austincunningham.ddns.net/2021/expressgrafana] to use these metrics
 
 
 
