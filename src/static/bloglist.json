@@ -1,4 +1,12 @@
 {
+    "2022":[
+        {
+            "id": "operatorsidebyside",
+            "date": "January 12, 2022",
+            "title": "Running two Kubernetes Operators locally",
+            "description": "How to run two Kubernetes Operators locally"
+        }
+    ],
     "2021":[
         {
             "id": "operatorv1vscode",
