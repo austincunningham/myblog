@@ -1,5 +1,6 @@
 
 # Keycloak Express Openid-client
+![banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kd6paztfgofophghmtpy.png)
 
 Keycloak is [deprecating](https://www.keycloak.org/2022/02/adapter-deprecation) their client adapters (keycloak-connect) for Node and recommending openid-client as a replacement.
 
