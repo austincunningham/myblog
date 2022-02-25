@@ -5,6 +5,12 @@
             "date": "January 12, 2022",
             "title": "Running two Kubernetes Operators locally",
             "description": "How to run two Kubernetes Operators locally"
+        },
+        {
+            "id": "keycloakexpressoidc",
+            "date": "February 25, 2022",
+            "title": "Keycloak Express Openid-client",
+            "description": "How to use Keycloak in Express using OIDC"
         }
     ],
     "2021":[
