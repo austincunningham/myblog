@@ -42,7 +42,7 @@ From the Realm we need the openid-configuration can be got an endpoint
 ```
 So in my case the realm name is keycloak-express so the url will be http://localhost:8080/realms/keycloak-express/.well-known/openid-configuration the output is as follows
 ![.well-known url output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ruaxgvsvycdhubwhm7b1.png) 
-All we need for is the `issuer:"http://localhost:8080/realms/keycloak-express"` url to connect openid-client to keycloak as follows
+All we need is this `issuer:"http://localhost:8080/realms/keycloak-express"` url to connect openid-client to keycloak as follows
 
 ```js
 'use strict';
