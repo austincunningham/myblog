@@ -36,7 +36,7 @@ npm install express-session
 npm install express
 ```
 
-From the Realm we need the openid-configuration can be got an endpoint 
+From the Realm we need the openid-configuration can be got from an endpoint 
 ```
 /realms/{realm-name}/.well-known/openid-configuration
 ```
