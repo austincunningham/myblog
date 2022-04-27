@@ -204,9 +204,13 @@ First I set up a project in Openshift 3.11, on [Minishift](https://www.okd.io/mi
 oc new-project golanguser
 ```
 Login to the Openshift console and deploy Mongodb from the Openshift catalog. Open the project in the console and click on `Browse Catalog`
+
  ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/6s87xgigwjp9t079qkav.png)
+
 Click on Mongodb
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/5wlte8gazfc8ltolqcpy.png)
+
 Follow the creation flow until you get to `Configuration` set the following as some will be auto generated if you don't
 - Database Service Name
 - MongoDB Connection Username
@@ -215,8 +219,11 @@ Follow the creation flow until you get to `Configuration` set the following as s
 - MongoDB Admin Password
 
 Once set click the create button
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/j0spux60fum5zr2l4sf6.png)
+
 The Results screen will have the connection url. I will be using part of the connection url in the code.
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/6uvw4xdgctqs0p6ypf44.png)
 
 Change the connection url in the main package here
@@ -288,6 +295,7 @@ curl http://localhost:8080/users
 
 ``` 
 Final step is to add a route click on the rest container and `create route`
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/e9asppukj1pp1zkbaat3.png)
 
 Except the defaults your route will appear in the console it can be accessed from any where with the users route
