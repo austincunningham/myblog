@@ -212,11 +212,17 @@ Click on Mongodb
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/5wlte8gazfc8ltolqcpy.png)
 
 Follow the creation flow until you get to `Configuration` set the following as some will be auto generated if you don't
-- Database Service Name
-- MongoDB Connection Username
-- MongoDB Connection Password
-- MongoDB Database Name
-- MongoDB Admin Password
+
+`Database Service Name`
+
+`MongoDB Connection Username`
+  
+`MongoDB Connection Password`
+  
+`MongoDB Database Name`
+  
+`MongoDB Admin Password`
+
 
 Once set click the create button
 
