@@ -7,7 +7,7 @@ Kubernetes cluster (as I am going to be adding some Openshift native resources I
 
 Cluster admin access to that cluster
 
-## Using the Opereator-sdk to bootstrap your project
+## Using the Operator-sdk to bootstrap your project
 First what is an Kubernetes operator? Operators allow you to extend the Kubernetes API by adding you own custom resources to a cluster. This is the most basic operator I can make, It will create a pod for a micro service and create a route for the micro service and allow you to specify the amount of replicas. I will outline all the steps I have take. First I use the generate command to scaffold the operator project. 
 ```bash
 mkdir pod-route
