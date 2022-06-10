@@ -1,6 +1,12 @@
 {
     "2022":[
         {
+            "id": "buildk8operator",
+            "date": "June 10, 2022",
+            "title": "Building a Kubernetes Operator",
+            "description": "How to Building a Kubernetes Operator"
+        },
+        {
             "id": "operatorsidebyside",
             "date": "January 12, 2022",
             "title": "Running two Kubernetes Operators locally",
