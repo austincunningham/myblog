@@ -1,7 +1,7 @@
 
 # Create an Electron app on Fedora
 
-![banner image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/et2nn3q91f79mxs3aphg.png)
+![banner image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7hyfju5mp1c75bjco3wc.png)
 
 
 ## Creating the Electron App
