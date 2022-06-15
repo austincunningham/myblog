@@ -1,6 +1,12 @@
 {
     "2022":[
         {
+            "id": "electronfedora",
+            "date": "June 15, 2022",
+            "description": "Create an Electron app from web app on Fedora",
+            "title": "Create an Electron app on Fedora"
+        },
+        {
             "id": "buildk8operator",
             "date": "June 10, 2022",
             "title": "Building a Kubernetes Operator",
