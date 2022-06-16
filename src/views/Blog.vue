@@ -46,7 +46,7 @@ export default {
       overflow-x: auto;
       background-color: #35495e;
       color: white;
-      border-radius: .3rem;
+      border-radius: .7rem;
       padding: 1rem;
     }
     img[src$="centerme"] {
