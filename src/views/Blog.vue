@@ -1,6 +1,13 @@
 <template>
   <div class="blog">
     <router-view></router-view>
+      <script type="application/javascript" defer src="https://utteranc.es/client.js"
+        repo="austincunningham/myblog"
+        issue-term="url"
+        theme="dark-blue"
+        crossorigin="anonymous"
+        async>
+  </script>
   </div>
 </template>
 <script>
