@@ -1,10 +1,18 @@
 <template>
   <div class="blog">
     <router-view></router-view>
-      <script type="application/javascript" defer src="https://utteranc.es/client.js"
-        repo="austincunningham/myblog"
-        issue-term="url"
-        theme="dark-blue"
+      <script type="application/javascript" defer src="https://giscus.app/client.js"
+        data-repo="austincunningham/myblog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxODA0NDcxMTA="
+        data-category="General"
+        data-category-id="DIC_kwDOCsFnhs4CPxav"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
   </script>
