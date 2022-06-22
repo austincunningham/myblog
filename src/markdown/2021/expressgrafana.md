@@ -45,6 +45,7 @@ NAME            HOST/PORT                                PATH   SERVICES        
 grafana-route   grafana-route-grafana.apps-crc.testing          grafana-service   3000   edge          None
 # the HOST/PORT is the route so http://grafana-route-grafana.apps-crc.testing should open the grafana console
 ```
+
 ![screenshot of Grafana](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mw1a5v8m2uzh0quzok51.png)
 
 We will need to login to Grafana to be able to do anything. You can get the credentials for grafana in the Grafana CR
@@ -74,6 +75,7 @@ In the Data Source form in the HTML section add url for the Prometheus service. 
 # service-name.service-namespace.svc:port
 http://prometheus.default.svc:9090
 ```
+
 ![Add data source url](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i2l4x2tsj0kg5fxa2gri.gif)
 
 You can now see prometheus metrics in grafana.

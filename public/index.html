@@ -29,23 +29,22 @@
       }
     })();
   </script>
-  <script language='javascript'>
-    (function (){
-      $(document).ready(function(){
-        $('.ui.accordion').accordion(); 
-        $('.basic.test.modal')
-          .modal('setting', 'closable', false)
-          .modal('show');
-        $('.message .close')
-          .on('click', function() {
-            $(this)
-              .closest('.message')
-              .transition('fade');
-          });
-      });
-    })();
-  </script>
-
+    <script language='javascript'>
+      (function (){
+        $(document).ready(function(){
+          $('.ui.accordion').accordion(); 
+          $('.basic.test.modal')
+            .modal('setting', 'closable', false)
+            .modal('show');
+          $('.message .close')
+            .on('click', function() {
+              $(this)
+                .closest('.message')
+                .transition('fade');
+            });
+        });
+      })();
+    </script>
 
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>Austin Cunningham's Blog - Tech blogging and how to guides</title>

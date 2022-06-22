@@ -111,6 +111,7 @@ Clone this repo and cd to the new directory run npm install, there is some extra
 
 ## Demo Video
 You can see Keycloak and an Express.js server in action at
+
 [![ScreenShot](https://github.com/austincunningham/keycloak-express/blob/master/keycloak-setup.jpg?raw=true)](https://youtu.be/VAzI7f3pxec)
 
 ## Setup Keycloak Server

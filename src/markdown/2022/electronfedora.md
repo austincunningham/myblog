@@ -37,7 +37,9 @@ app.on('window-all-closed', () => {
 })
 ```
 Testing the app by running `npm start` and the app opens
+
 ![Image of the app open](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l6bq735g2m2f64knrwb2.png)
+
 That seems straight forward.
 
 ## Building the binary

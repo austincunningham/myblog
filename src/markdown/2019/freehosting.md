@@ -1,4 +1,5 @@
 # Free Web Site Hosting
+
 ![](https://cdn-images-1.medium.com/max/800/1*vd3vrus3rzuFsQZhOkNa-w.jpeg)
 
 There are many options for hosting and this is not a exhaustive list just some of the options I have tried. 
@@ -19,6 +20,7 @@ index.html
 ```
 
 Run surge to publish your site
+
 ![](https://surge.sh/images/help/getting-started-with-surge.gif)
 
 By default your given a cname in the surge.sh domain, but you can set a [custom domain](https://surge.sh/help/adding-a-custom-domain) as long as you have some [dns hosting](https://www.maketecheasier.com/best-dynamic-dns-providers/). 
@@ -42,6 +44,7 @@ add your custom domain in the box provided, again you need dns hosting.
 I have done this on many projects weather its just to jazz up a [doc's page](http://change-oc.ddns.net/README.html) or my hosting of this [blog](https://github.com/austincunningham/myblog).
 
 ## Heroku
+
 ![](https://cdn-images-1.medium.com/max/800/1*wBWMeBZBLbITHT0EcsZfyA.png)
 
 Heroku is an PAAS offering for hosting apps. You can deploy a [node app on heroku](https://devcenter.heroku.com/articles/deploying-nodejs). Setting a up an Express.js app to serve a directory see the [first section here](https://austincunningham.ddns.net/2018/hostingopenshift) for how to steps. 

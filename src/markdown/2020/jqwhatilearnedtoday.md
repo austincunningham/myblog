@@ -1,8 +1,7 @@
 
 # JQ what I learned today
-![](https://dev-to-uploads.s3.amazonaws.com/i/nntejen2pmrcn1iu1r0k.png)
----
 
+![](https://dev-to-uploads.s3.amazonaws.com/i/nntejen2pmrcn1iu1r0k.png)
 
 ## What's jq ?
 A command line parser for json that can be downloaded [here](https://stedolan.github.io/jq/download/) or you can use the [playground](https://jqplay.org/). I will use this local json file as an beginner example hello-world.json
@@ -40,6 +39,7 @@ cat hello-world.json | jq
 # You can curl remote json and pipe it to jq e.g. from https://stedolan.github.io/jq/tutorial/
 curl 'https://api.github.com/repos/stedolan/jq/commits?per_page=5' | jq '.'
 ```
+
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/uavyatp5vhw1f08q0cfa.png)
 
 ## Filtering with jq

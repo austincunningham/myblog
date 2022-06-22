@@ -1,5 +1,6 @@
 
 # Keycloak Express Openid-client
+
 ![banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kd6paztfgofophghmtpy.png)
 
 Keycloak is [deprecating](https://www.keycloak.org/2022/02/adapter-deprecation) their client adapters (keycloak-connect) for Node and recommending openid-client as a replacement.
@@ -12,12 +13,15 @@ bin/kc.sh start-dev
 You can then login http://localhost:8080, first time you do keycloak asks you to set an admin user and password. 
 
 Create a Realm and give it an name and create it. I am using keycloak-express for my realm name
+
 ![Create realm](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/e0erj948wmmrbng0v14l.gif)
 
 The create a Client using openid-connect in the Realm
+
 ![Create a client](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wctbp51o639k3hgu16q0.gif)
 
-Set the Valid Redirect URIs and select save, 
+Set the Valid Redirect URIs and select save. 
+
 ![set valid redirect URIs](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/07crr8q4tmtovxodehgq.gif)
 
 **NOTE**:you can specify specific routes here but I am using a wild card(not recommend best practice)
@@ -41,7 +45,9 @@ From the Realm we need the openid-configuration can be got from an endpoint
 /realms/{realm-name}/.well-known/openid-configuration
 ```
 So in my case the realm name is keycloak-express so the url will be http://localhost:8080/realms/keycloak-express/.well-known/openid-configuration the output is as follows
-![.well-known url output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ruaxgvsvycdhubwhm7b1.png) 
+
+![.well-known url output](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ruaxgvsvycdhubwhm7b1.png)
+
 All we need is this `issuer:"http://localhost:8080/realms/keycloak-express"` url to connect openid-client to keycloak as follows
 
 ```js

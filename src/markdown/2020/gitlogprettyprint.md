@@ -11,6 +11,7 @@ alias gitp="git log --pretty=format:'%C(yellow)%h %Cred%ad  %Creset%s' --date=lo
 # Usage
 gitp
 ```
+
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/d0tgjd85r31mh8p89rtv.png)
 
 ## gitpp - pretty print all logs
@@ -30,6 +31,7 @@ alias gitpa="git log --pretty=format:'%C(yellow)%h %<(24)%C(red)%ad %<(18)%C(gre
 # Usage
 gitpa
 ```
+
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/7he5z1h2n4voe1z1bugu.png)
 
 ## gitag - pretty print tags
@@ -39,6 +41,7 @@ alias gitag="git log --no-walk --tags --pretty=format:' %C(yellow)%h %Cgreen%d  
 # Usage
 gitag
 ```
+
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/pshrd4qjpi44zkinngjp.png)
 
 ## gitbr - Provide minimal graphical display
@@ -48,6 +51,7 @@ alias gitbr='git log --oneline --decorate --graph --all'
 # Usage
 gitbr
 ```
+
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/buf949osyujf6v3kfqqp.png)
 
 Used gitbr a lot in the passed but now use [tig](https://jonas.github.io/tig/) which does the same and more

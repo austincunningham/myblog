@@ -1,5 +1,6 @@
 
 # Get Prometheus Metrics from a Express.js app
+
 ![banner image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2wgqholbtjqe661gavan.png)
 
 
@@ -137,6 +138,7 @@ oc expose service example-app
 route.route.openshift.io/example-app exposed
 ```
 You can test the route by hitting the /metrics path in the browser you should see
+
 ![metrics screen shot](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/w20ytvf0lzemd7j6x86q.png)
 
 ## Setup Prometheus Operator on Openshift
@@ -152,10 +154,15 @@ Openshift has an operator hub so I did the following to fix the crashing operato
 oc delete deployment prometheus-operator
 ```
 Logged in to crc/Openshift console as kubeadmin, in the administrator view go to OperatorHub and search for prometheus
+
 ![administrator view go to operator hub and search for prometheus](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/a1jcm9lxb72ios6nwbe9.png)
+
 Select the `Prometheus Operator` tile and `continue` then select `install` button
+
 ![Install Prometheus button](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3t4bab24d4pwj2oddo2a.png)
+
 Select the default namespace from the drop down and install button again
+
 ![Install Prometheus button](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ov7novmbck4f30fo0vf1.png)
 
 Phew! that took longer to explain that to do. 
@@ -297,11 +304,14 @@ example-app   example-app-default.apps-crc.testing          example-app   web   
 prometheus    prometheus-default.apps-crc.testing           prometheus    web                  None
 ``` 	
 You can open the Prometheus UI by adding a http:// to the Prometheus HOST/PORT returned from the oc get routes command
+
 ![prometheus UI](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/yquddzw2fh85ivwn0uj3.png)
 
 ## So how do you know if its working
 It takes a little while for the Prometheus operator to reconcile and to show up the new resources. In the Prometheus ui first check the `Status\Service Discovery` you should see example-app show up
+
 ![screenshot status\service discovery](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/s1l94sqtx5xe18wcnrwt.png)
+
 >**NOTE:** be patient it can take a while to show up
 
 Then check the `Status\Targets` should see the following targets up
@@ -309,6 +319,7 @@ Then check the `Status\Targets` should see the following targets up
 ![screenshot status\targets up](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y0oskurti0tk67r7zrqo.png)
 
 You also should be able to see metrics from example-app in the graph tab
+
 ![screenshot of the graph tab showing example-apps metrics](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pa6yziyxuy853xhk2hzo.png)
 
 That it I may do a follow up on (setting up Grafana)[https://austincunningham.ddns.net/2021/expressgrafana] to use these metrics

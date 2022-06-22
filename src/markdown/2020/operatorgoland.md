@@ -19,6 +19,7 @@ go get -u github.com/go-delve/delve/cmd/dlv
 
 In Goland go to `Run\Edit Configurations...`
 
+
 ![Alt Text](https://thepracticaldev.s3.amazonaws.com/i/qf038nul6d8l4pe9yxze.png)
 
 Click on the Plus symbol `+` and add `Go Remote` add a Name and click `Apply` the defaults are fine
