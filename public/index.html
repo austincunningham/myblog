@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/agate.min.css">
-  <script  charset="UTF-8"  src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/go.min.js"></script> 
-  <script>hljs.highlightAll();</script>
+  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+  <script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/languages/go.min.js"></script>
+  <script type="application/javascript">hljs.initHighlighting();</script>
   <meta name="google-site-verification" content="KK3YKQVjDv8ltS-rTfFVUYbx0AIqUVWshs_uYY3OX9c" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138297422-1"></script>
   <script>
@@ -29,29 +32,31 @@
       }
     })();
   </script>
-    <script language='javascript'>
-      (function (){
-        $(document).ready(function(){
-          $('.ui.accordion').accordion(); 
-          $('.basic.test.modal')
-            .modal('setting', 'closable', false)
-            .modal('show');
-          $('.message .close')
-            .on('click', function() {
-              $(this)
-                .closest('.message')
-                .transition('fade');
-            });
-        });
-      })();
-    </script>
+  <script language='javascript'>
+    (function () {
+      $(document).ready(function () {
+        $('.ui.accordion').accordion();
+        $('.basic.test.modal')
+          .modal('setting', 'closable', false)
+          .modal('show');
+        $('.message .close')
+          .on('click', function () {
+            $(this)
+              .closest('.message')
+              .transition('fade');
+          });
+      });
+    })();
+  </script>
+  
 
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>Austin Cunningham's Blog - Tech blogging and how to guides</title>
   <meta name="description" content="Tech, blogging site, mostly how to guides and software development">
   <meta name="author" content="Austin Cunningham">
-  <meta name="keywords" content="tech,guides,software,developement,node,opensource,keycloak,openshift,ansible,fullstack">
-  <meta property=”og:title” content=”Austin Cunninghams Blog - Tech blogging and how to guides”/>
+  <meta name="keywords"
+    content="tech,guides,software,developement,node,opensource,keycloak,openshift,ansible,fullstack">
+  <meta property=”og:title” content=”Austin Cunninghams Blog - Tech blogging and how to guides” />
   <meta property=”og:description” content=”Tech, blogging site, mostly how to guides and software development” />
   <meta property=”og:image” content=”https://austincunningham.ddns.net/social/social.png” />
 
@@ -64,7 +69,7 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
-  
+
 </body>
 
 </html>
