@@ -1,6 +1,12 @@
 {
     "2022":[
         {
+            "id": "namespacevscluster",
+            "date": "July 4, 2022",
+            "description": "Changing an Existing Kubernetes operator to cluster scoped ",
+            "title": "Changing an Existing Kubernetes operator to cluster scoped "
+        },
+        {
             "id": "electronfedora",
             "date": "June 15, 2022",
             "description": "Create an Electron app from web app on Fedora",
