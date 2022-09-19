@@ -6,7 +6,7 @@ description: id_token_hint and how to set it
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kd6paztfgofophghmtpy.png)
 
 
-Created a blog some time ago setting up [keycloak express and OIDC client](https://austincunningham.ddns.net/2022/keycloakexpressoidcg) and it happily worked fine with keycloak-17.0.0 and still does. On keycloak-19.0.2 same code completely falls over. (Note self always set prerequisites on dependencies in blogs).
+Created a blog some time ago setting up [keycloak express and OIDC client](https://austincunningham.ddns.net/2022/keycloakexpressoidcg) and it happily worked fine with keycloak-17.0.0 and still does. On keycloak-19.0.2 same code completely falls over. (Note to self always set prerequisites on dependencies in blogs).
 
 First issue I needed to enable Standard flow for the client in keycloak as I was seeing the following error in the logs
 ```bash
