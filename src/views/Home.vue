@@ -24,10 +24,10 @@
             <a href="https://medium.com/@auscunningham">
               <i class="big medium icon"></i>
             </a>
-            <a rel="me" href="https://mastodon.ie/@austincunningham">
-            </a>
             <a href="https://austin-cunningham.surge.sh/">
               <i class="big edit outline icon"></i>
+            </a>
+            <a rel="me" href="https://mastodon.ie/@austincunningham">.
             </a>
           </h5>
         </div>
