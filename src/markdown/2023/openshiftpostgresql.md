@@ -1,11 +1,3 @@
----
-title: Upgrading Postgresql-v10 to v13 on Openshift
-description: How to upgrade Postgresql-v10 to v13 on Openshift
-tags: postgresql,openshift,kubernetes,upgrade
-cover_image: 
-# Use a ratio of 100:42 for best results.
-# published_at: 2023-02-15 12:18 +0000
----
 # Upgrading Postgresql-v10 to v13 on Openshift
 
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k42vumrw4xmdzhumwlig.png)
