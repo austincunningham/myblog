@@ -1,4 +1,12 @@
 {
+    "2023":[
+        {
+            "id": "openshiftpostgresql",
+            "date": "February 17, 2023",
+            "description": "How to upgrade Postgresql-v10 to v13 on Openshift ",
+            "title": "Upgrading Postgresql-v10 to v13 on Openshift "
+        }
+    ],
     "2022":[
         {
             "id": "idtokenhint",
