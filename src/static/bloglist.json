@@ -4,7 +4,13 @@
             "id": "openshiftpostgresql",
             "date": "February 17, 2023",
             "description": "How to upgrade Postgresql-v10 to v13 on Openshift ",
-            "title": "Upgrading Postgresql-v10 to v13 on Openshift "
+            "title": "Upgrading Postgresql-v10 to v13 on Openshift  "
+        },
+        {
+            "id": "3scaleoperator",
+            "date": "February 17, 2023",
+            "description": "How to setup 3scale with the 3scale-operator and create your first product",
+            "title": "Kicking the tyres of 3scale API Management with the operator"
         }
     ],
     "2022":[
