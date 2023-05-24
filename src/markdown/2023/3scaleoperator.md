@@ -105,7 +105,7 @@ From the dashboard click on **Create Backend** and fill out the form adding a va
 ![Add a backend](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h26xnnfjht5lv3xxmd0c.gif)
 
 ### Create a Product
-From the dashboard click on **Create Backend** and fill out the form
+From the dashboard click on **Create Product** and fill out the form
 
 ![Add a product](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mhdqug12qjomy7c5neew.gif)
 
