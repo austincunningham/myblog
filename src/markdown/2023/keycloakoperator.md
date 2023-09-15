@@ -101,7 +101,7 @@ Ok that's working
 
 ## Hostname
 
-We need a resolvable domain name. You can add any domain to your openshift cluster using a [customDomain](https://docs.openshift.com/rosa/applications/deployments/osd-config-custom-domains-applications.html). As I couldn't be bothered setting up an actual domain name here or a valid cert is a quick hack for creating a resolvable domain name on Openshift.
+We need a resolvable domain name. You can add any domain to your openshift cluster using a [customDomain](https://docs.openshift.com/rosa/applications/deployments/osd-config-custom-domains-applications.html). As I couldn't be bothered setting up an actual domain name here or a valid cert this is a quick hack for creating a resolvable domain name on Openshift.
 
 ```bash
 # create a self signed cert 
