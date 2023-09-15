@@ -129,7 +129,7 @@ oc get customdomains
 NAME         ENDPOINT                                          DOMAIN           STATUS
 cunningham   oeffrs.cunningham.aucunnin.lpi0.s1.devshift.org   apps.austin.me   Ready
 ```
-All pretty standard a this point but the domain apps.austin.me doesn't exist. So here is the hack edit the custom domain `oc edit customdomain cunningham` and replace the spec.host with the endpoint. 
+All pretty standard at this point but the domain apps.austin.me doesn't exist. So here is the hack edit the custom domain `oc edit customdomain cunningham` and replace the spec.host with the endpoint. 
 ```yaml
 apiVersion: managed.openshift.io/v1alpha1
 kind: CustomDomain
