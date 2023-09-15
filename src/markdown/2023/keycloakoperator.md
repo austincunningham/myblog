@@ -101,7 +101,7 @@ Ok that's working
 
 ## Hostname
 
-We need a resolvable domain name. You can add any domain to your openshift cluster using a [customDomain](https://docs.openshift.com/rosa/applications/deployments/osd-config-custom-domains-applications.html). As I couldn't be bothered setting up an actual domain name here or a valid cert this is a quick hack for creating a resolvable domain name on Openshift.
+We need a resolvable domain name. You can add any domain to your openshift cluster using a [customDomain](https://docs.openshift.com/rosa/applications/deployments/osd-config-custom-domains-applications.html). As I couldn't be bothered setting up an actual domain name here or a valid cert, this is a quick hack for creating a resolvable domain name on Openshift.
 
 ```bash
 # create a self signed cert 
@@ -129,7 +129,7 @@ oc get customdomains
 NAME         ENDPOINT                                          DOMAIN           STATUS
 cunningham   oeffrs.cunningham.aucunnin.lpi0.s1.devshift.org   apps.austin.me   Ready
 ```
-All pretty standard at this point but the domain apps.austin.me doesn't exist. So here is the hack edit the custom domain `oc edit customdomain cunningham` and replace the spec.host with the endpoint. 
+All pretty standard at this point but the domain apps.austin.me doesn't exist. So here is the hack, edit the custom domain `oc edit customdomain cunningham` and replace the spec.host with the endpoint. 
 ```yaml
 apiVersion: managed.openshift.io/v1alpha1
 kind: CustomDomain
