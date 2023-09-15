@@ -11,7 +11,14 @@
             "date": "February 17, 2023",
             "description": "How to setup 3scale with the 3scale-operator and create your first product",
             "title": "Kicking the tyres of 3scale API Management with the operator"
+        },
+        {
+            "id": "keycloakoperator",
+            "date": "September 15, 2023",
+            "description": "How to install Keycloak via the operator",
+            "title": "Install the Keycloak via the operator"
         }
+
     ],
     "2022":[
         {
