@@ -22,6 +22,8 @@ e.g. test.md in 2019 directory would mean you need to add to the 2019 array
 
 ## Project setup
 ```
+node --version
+v12.18.3
 npm install
 ```
 
