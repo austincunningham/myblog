@@ -35,7 +35,7 @@ type DB struct {
 
 // Define the routes
 func main() {
-	fmt.Printf("REST API User from golang\n")
+	fmt.Printf("REST API User from golang ")
 
 	// Set client options
     clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
@@ -63,7 +63,7 @@ func main() {
 
 	//outputs
 	fmt.Printf("Server listing on http://localhost:8080/users")
-	fmt.Printf("\nCTRL C to exit\n")
+	fmt.Printf(" CTRL C to exit ")
 
 	// Controller for endpoints
 	r := mux.NewRouter()

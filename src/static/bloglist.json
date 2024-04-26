@@ -5,6 +5,12 @@
             "date": "March 1, 2024",
             "description": "Automate 3scale monitoring stack deployment ",
             "title": "Automate 3scale monitoring stack deployment "
+        },
+        {
+            "id": "3scale-load-testing",
+            "date": "April 24, 2024",
+            "description": "Load testing with 3scale and hyperfoil ",
+            "title": "3scale Load Testing "
         }
     ],
     "2023":[
