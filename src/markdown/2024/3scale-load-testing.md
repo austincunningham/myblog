@@ -162,7 +162,7 @@ ansible-galaxy collection install community.docker
 ansible-galaxy collection install community.general
 ```
 
-In `deployment/ansible.cfg` I needed to point the the ssh key to be allow Ansible to access the ec2 instance via ssh so added the [ssh_connection] section. Updating this was in the readme but was missing the key
+In `deployment/ansible.cfg` I needed to point the ssh key to allow Ansible to access the ec2 instance via ssh so added the [ssh_connection] section. Updating this was in the readme but was missing the key
 ```toml
 # project specific configuration for Ansible 
 
