@@ -1,4 +1,12 @@
 {
+    "2025":[
+        {
+            "id": "prometheus-uptime",
+            "date": "February 28, 2025",
+            "description": "Monitor internet uptime with Prometheus and Grafana on you local PC",
+            "title": "Monitor internet uptime on your local PC"
+        }
+    ],
     "2024":[
         {
             "id": "3scale_monitoring",
