@@ -1,3 +1,5 @@
+# Monitor internet uptime on your local PC
+
 ![](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qo9opg3zp6hflu0tloj3.png)
 
 I wanted to monitor my Internet uptime and graph it over time on my PC which is on Fedora 39. I gave some taught to running ping scripts but these didn't meet my needs. After a bit of research I found that Prometheus has all the tools I need. First Installed Prometheus first I tried dnf but that failed

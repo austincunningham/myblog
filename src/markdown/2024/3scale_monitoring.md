@@ -1,7 +1,5 @@
 
 # Automate 3scale monitoring stack deployment
-published: false
-description: Automate 3scale monitoring stack deployment
 
 ![Banner image with prometheus, grafana and 3scale logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/205920ypz4m1edbb4n65.png)
 
