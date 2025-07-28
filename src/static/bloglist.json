@@ -11,6 +11,12 @@
             "date": "July 10, 2025",
             "description": "Build a Local AI RAG App with Ollama and Python",
             "title": "Build a Local AI RAG App with Ollama and Python"
+        },
+        {
+            "id": "kube-ollama-python",
+            "date": "July 28, 2025",
+            "description": "Use Python, kubectl, and a local LLM (Llama3 via Ollama) to automatically diagnose failing Kubernetes pods.",
+            "title": "AI-Powered Kubernetes Debugging with Python and Ollama"
         }
     ],
     "2024":[
