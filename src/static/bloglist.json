@@ -17,6 +17,12 @@
             "date": "July 28, 2025",
             "description": "Use Python, kubectl, and a local LLM (Llama3 via Ollama) to automatically diagnose failing Kubernetes pods.",
             "title": "AI-Powered Kubernetes Debugging with Python and Ollama"
+        },
+        {
+            "id": "ollama-openshift",
+            "date": "July 31, 2025",
+            "description": "A step-by-step guide to quickly deploy and manage Ollama on OpenShift or Kubernetes using the Ollama Operator. Install the operator, deploy a model, and test your AI inference server in minutes",
+            "title": "Deploying Ollama on Openshift with the Ollama Operator"
         }
     ],
     "2024":[
