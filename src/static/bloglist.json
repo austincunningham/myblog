@@ -23,6 +23,12 @@
             "date": "July 31, 2025",
             "description": "A step-by-step guide to quickly deploy and manage Ollama on OpenShift or Kubernetes using the Ollama Operator. Install the operator, deploy a model, and test your AI inference server in minutes",
             "title": "Deploying Ollama on Openshift with the Ollama Operator"
+        },
+        {
+            "id": "ollama-sre-chatbot",
+            "date": "September 24, 2025",
+            "description": "Build an Ollama LLM software engineering language bot ",
+            "title": "Build an Ollama LLM software engineering language bot"
         }
     ],
     "2024":[
