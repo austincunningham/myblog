@@ -152,17 +152,17 @@ semantic ui will handle the style.
 
 ```html
 <div id="messages" class="ui segment inverted chat-container">
-            <div class="ui center aligned basic inverted segment">
-                <div class="sub header">Start the conversation! What would you like to know?</div>
-            </div>
-        </div>
+    <div class="ui center aligned basic inverted segment">
+        <div class="sub header">Start the conversation! What would you like to know?</div>
+    </div>
+</div>
 
-        <div class="ui action fluid input inverted">
-            <input type="text" id="user-input" placeholder="Ask a question..." autocomplete="off">
-            <button class="ui button inverted green" id="send-btn">
-                <i class="paper plane outline icon"></i>
-            </button>
-        </div>
+<div class="ui action fluid input inverted">
+    <input type="text" id="user-input" placeholder="Ask a question..." autocomplete="off">
+    <button class="ui button inverted green" id="send-btn">
+        <i class="paper plane outline icon"></i>
+    </button>
+</div>
 ```
 And this gives us this basic ui with a chat box and send button
 
