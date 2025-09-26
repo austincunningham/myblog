@@ -22,8 +22,90 @@
   </div>
 </template>
 <script>
+import BLOGENTRIES from "../static/bloglist.json";
+
 export default {
   name: "Blog",
+  metaInfo() {
+    const currentRoute = this.$route.name;
+    const currentPath = this.$route.path;
+    
+    // Extract year and post ID from path like "/2025/ollama-python"
+    const pathParts = currentPath.split('/').filter(part => part);
+    const currentYear = pathParts[0];
+    const postId = pathParts[1] || currentRoute;
+    
+    // Find the blog post in our data
+    let blogPost = null;
+    if (currentYear && BLOGENTRIES[currentYear]) {
+      blogPost = BLOGENTRIES[currentYear].find(post => post.id === postId);
+    }
+    
+    console.log('Debug meta info:', { currentRoute, currentPath, currentYear, postId, blogPost });
+    
+    if (blogPost) {
+      return {
+        title: `${blogPost.title} | Austin Cunningham's Blog`,
+        meta: [
+          { name: 'description', content: blogPost.description },
+          { name: 'keywords', content: `${blogPost.title.toLowerCase()}, kubernetes, openshift, devops, tutorial` },
+          { property: 'og:title', content: blogPost.title },
+          { property: 'og:description', content: blogPost.description },
+          { property: 'og:image', content: `https://austincunningham.ddns.net/images/${blogPost.id}.png` },
+          { property: 'og:url', content: `https://austincunningham.ddns.net/${currentYear}/${blogPost.id}` },
+          { property: 'og:type', content: 'article' },
+          { property: 'article:published_time', content: blogPost.date },
+          { property: 'article:author', content: 'Austin Cunningham' },
+          { name: 'twitter:card', content: 'summary_large_image' },
+          { name: 'twitter:creator', content: '@auscunningham' },
+          { name: 'twitter:title', content: blogPost.title },
+          { name: 'twitter:description', content: blogPost.description },
+          { name: 'twitter:image', content: `https://austincunningham.ddns.net/images/${blogPost.id}.png` }
+        ],
+        script: [
+          {
+            type: 'application/ld+json',
+            json: {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": blogPost.title,
+              "description": blogPost.description,
+              "image": `https://austincunningham.ddns.net/images/${blogPost.id}.png`,
+              "author": {
+                "@type": "Person",
+                "name": "Austin Cunningham",
+                "url": "https://austincunningham.ddns.net",
+                "sameAs": [
+                  "https://github.com/austincunningham",
+                  "https://twitter.com/auscunningham",
+                  "https://www.linkedin.com/in/austin-cunningham-90365729/"
+                ]
+              },
+              "publisher": {
+                "@type": "Person",
+                "name": "Austin Cunningham",
+                "url": "https://austincunningham.ddns.net"
+              },
+              "datePublished": blogPost.date,
+              "dateModified": blogPost.date,
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://austincunningham.ddns.net/${currentYear}/${blogPost.id}`
+              },
+              "keywords": `${blogPost.title.toLowerCase()}, kubernetes, openshift, devops, tutorial`
+            }
+          }
+        ]
+      };
+    }
+    
+    return {
+      title: 'Austin Cunningham\'s Blog - Tech Tutorials and Guides',
+      meta: [
+        { name: 'description', content: 'Technical blog covering Kubernetes, OpenShift, DevOps, and software development tutorials.' }
+      ]
+    };
+  }
 };
 </script>
 

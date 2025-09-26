@@ -64,6 +64,8 @@
                         <img
                           class="ui large image"
                           v-bind:src="`/images/${entry.id}.png`"
+                          v-bind:alt="`${entry.title} - Tutorial thumbnail`"
+                          loading="lazy"
                         />
                         {{ entry.image }}
                         <i class="linkify icon"></i>
@@ -104,6 +106,23 @@ import BLOGENTRIES from "../static/bloglist.json";
 
 export default {
   name: "Home",
+  metaInfo: {
+    title: 'Austin Cunningham - DevOps Engineer & Technical Writer',
+    meta: [
+      { name: 'description', content: 'Technical blog by Austin Cunningham, Senior Software Engineer at Red Hat. Tutorials on Kubernetes, OpenShift, Keycloak, DevOps, and cloud-native technologies.' },
+      { name: 'keywords', content: 'austin cunningham, kubernetes, openshift, devops, red hat, keycloak, golang, nodejs, cloud native, tutorials, software engineer' },
+      { property: 'og:title', content: 'Austin Cunningham - DevOps Engineer & Technical Writer' },
+      { property: 'og:description', content: 'Technical blog covering Kubernetes, OpenShift, DevOps, and software development tutorials by Red Hat Software Engineer Austin Cunningham.' },
+      { property: 'og:image', content: 'https://austincunningham.ddns.net/social/social.png' },
+      { property: 'og:url', content: 'https://austincunningham.ddns.net/' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:creator', content: '@auscunningham' },
+      { name: 'twitter:title', content: 'Austin Cunningham - DevOps Engineer & Technical Writer' },
+      { name: 'twitter:description', content: 'Technical blog covering Kubernetes, OpenShift, DevOps, and software development tutorials.' },
+      { name: 'twitter:image', content: 'https://austincunningham.ddns.net/social/social.png' }
+    ]
+  },
   computed: {
     entries() {
       return BLOGENTRIES;
