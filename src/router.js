@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import PrivacyPolicy from './views/PrivacyPolicy.vue'
+import CookiePolicy from './views/CookiePolicy.vue'
 import BlogEntries from './static/bloglist.json';
 
 Vue.use(Router)
@@ -25,6 +27,8 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     { path: '/', name: 'Home', component: Home },
+    { path: '/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy },
+    { path: '/cookie-policy', name: 'CookiePolicy', component: CookiePolicy },
     ...blogRoutes
     ],
     scrollBehavior () {
