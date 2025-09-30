@@ -109,7 +109,7 @@ export default {
     return {
       showCookieBanner: false,
       showSettings: false,
-      analyticsConsent: false,
+      analyticsConsent: true,
       onHover: false
     }
   },
