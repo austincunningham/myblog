@@ -14,10 +14,10 @@
         <!-- Cookie Categories -->
         <div style="margin-bottom: 15px;">
           <div style="margin-bottom: 8px;">
-            <label style="display: flex; align-items: center; cursor: pointer;">
-              <input type="checkbox" checked disabled style="margin-right: 8px;">
-              <span style="font-size: 13px;"><strong>Essential</strong> - Required for site functionality</span>
-            </label>
+            <div style="display: flex; align-items: center;">
+              <span style="color: #27ae60; margin-right: 8px;">✓</span>
+              <span style="font-size: 13px;"><strong>Essential</strong> - Required for site functionality (always active)</span>
+            </div>
           </div>
           <div style="margin-bottom: 8px;">
             <label style="display: flex; align-items: center; cursor: pointer;">
@@ -58,10 +58,10 @@
           <div style="margin-bottom: 20px;">
             <h4>Essential Cookies (Required)</h4>
             <p style="font-size: 14px; color: #666;">These cookies are necessary for the website to function and cannot be switched off.</p>
-            <label style="display: flex; align-items: center;">
-              <input type="checkbox" checked disabled style="margin-right: 8px;">
-              Site functionality, security, and session management
-            </label>
+            <div style="display: flex; align-items: center;">
+              <span style="color: #27ae60; margin-right: 8px;">✓</span>
+              <span>Site functionality, security, and session management</span>
+            </div>
           </div>
           
           <div style="margin-bottom: 20px;">
