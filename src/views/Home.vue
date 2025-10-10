@@ -60,18 +60,21 @@
                       v-on:mouseover="onHover = true"
                       v-on:mouseleave="onHover = false"
                     >
-                      <h3 @click="$router.push({ name: entry.id })">
-                        <img
-                          class="ui large image"
-                          v-bind:src="`/images/${entry.id}.png`"
-                          v-bind:alt="`${entry.title} - Tutorial thumbnail`"
-                          loading="lazy"
-                        />
-                        {{ entry.image }}
-                        <i class="linkify icon"></i>
-                        {{ entry.title }}
-                        <span class="subtitle">....({{ entry.date }})</span>
-                      </h3>
+                      <router-link :to="{ name: entry.id }" style="text-decoration: none; color: inherit;">
+                        <h3>
+                          <img
+                            class="ui large image"
+                            v-bind:src="`/images/${entry.id}.png`"
+                            v-bind:alt="`${entry.title} - Tutorial thumbnail`"
+                            loading="lazy"
+                            style="pointer-events: none;"
+                          />
+                          {{ entry.image }}
+                          <i class="linkify icon"></i>
+                          {{ entry.title }}
+                          <span class="subtitle">....({{ entry.date }})</span>
+                        </h3>
+                      </router-link>
                       <p>{{ entry.description }}</p>
                     </div>
                   </div>
