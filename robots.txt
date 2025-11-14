@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://austincunningham.ddns.net/sitemap.xml
+
+# Allow crawling of all content
+Crawl-delay: 1
+
+# Disallow crawling of admin or private areas (none currently)
+# Disallow: /admin/
