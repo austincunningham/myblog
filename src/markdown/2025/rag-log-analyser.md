@@ -72,7 +72,7 @@ for root, _, files in os.walk(directory):
         if file_lower.endswith(allowed_exts):
             path = os.path.join(root, file)
             file_count += 1
-            print(f"📄 Processing file {file_count}: {file}")
+            print(f"Processing file {file_count}: {file}")
             
             try:
                 with open(path, 'r', encoding='utf-8') as f:
@@ -88,13 +88,13 @@ for root, _, files in os.walk(directory):
                             
                             # Show progress for large files
                             if line_count % 10000 == 0:
-                                print(f"   📊 Processed {line_count:,} lines...")
+                                print(f"   Processed {line_count:,} lines...")
                     
-                    print(f"   ✅ Completed: {line_count:,} lines processed")
+                    print(f"   Completed: {line_count:,} lines processed")
             except Exception as e:
-                print(f"❌ Error loading {path}: {e}")
+                print(f"Error loading {path}: {e}")
 
-print(f"📊 Summary: Processed {file_count} files, {total_lines:,} total log entries")
+print(f"Summary: Processed {file_count} files, {total_lines:,} total log entries")
 return [Document(**d) for d in docs]
 ```
 
@@ -127,12 +127,12 @@ from langchain_ollama import OllamaLLM
 #### **Directory Input & Validation**
 ```python
 try:
-    LOG_DIRECTORY = input("➡️ Please enter the full path to the log directory: ")
+    LOG_DIRECTORY = input("-> Please enter the full path to the log directory: ")
     if not os.path.isdir(LOG_DIRECTORY):
-        print(f"❌ Error: Directory not found at '{LOG_DIRECTORY}'")
+        print(f"Error: Directory not found at '{LOG_DIRECTORY}'")
         sys.exit(1)
 except KeyboardInterrupt:
-    print("\n\n👋 Goodbye. Exiting...")
+    print("\n\nExiting...")
     sys.exit(0)
 ```
 - Prompts user for log directory path
@@ -143,11 +143,11 @@ except KeyboardInterrupt:
 #### **Document Loading & Processing**
 ```python
 try:
-    print(f"📂 Loading log files from: {LOG_DIRECTORY}...")
+    print(f"Loading log files from: {LOG_DIRECTORY}...")
     docs = load_sop_files(LOG_DIRECTORY)
-    print(f"✅ Loaded {len(docs)} log entries from files")
+    print(f"Loaded {len(docs)} log entries from files")
 except KeyboardInterrupt:
-    print("\n\n⏹️  File loading interrupted by user. Exiting ...")
+    print("\n\nFile loading interrupted by user. Exiting ...")
     sys.exit(0)
 ```
 - Calls our custom loader to process all log files
@@ -156,14 +156,14 @@ except KeyboardInterrupt:
 
 #### **Vector Database Creation (The Heavy Lifting)**
 ```python
-print(f"🧠 Creating vector database with {len(chunks)} log entries...")
-print("⏳ This may take several minutes for large files...")
+print(f"Creating vector database with {len(chunks)} log entries...")
+print("This may take several minutes for large files...")
 
 # Check if database already exists
 db_path = "./chroma_db"
 db_exists = os.path.exists(db_path)
 if db_exists:
-    rebuild_choice = input("🔄 Vector database already exists. Rebuild? (y/n): ")
+    rebuild_choice = input("Vector database already exists. Rebuild? (y/n): ")
 
 # Optimized embedding settings
 embeddings = HuggingFaceEmbeddings(
@@ -173,17 +173,17 @@ embeddings = HuggingFaceEmbeddings(
 )
 
 if db_exists and rebuild_choice != 'y':
-    print("📂 Found existing vector database, loading...")
+    print("Found existing vector database, loading...")
     db = Chroma(persist_directory=db_path, embedding_function=embeddings)
-    print("✅ Vector database loaded successfully")
+    print("Vector database loaded successfully")
 else:
-    print("📊 Creating new vector database...")
+    print("Creating new vector database...")
     db = Chroma.from_documents(
         chunks, embeddings,
         persist_directory=db_path,
         collection_metadata={"hnsw:space": "cosine"}
     )
-    print("✅ Vector database created and saved")
+    print("Vector database created and saved")
 ```
 - **Persistent Storage**: Database saved to `./chroma_db/` for reuse
 - **Optimized Embeddings**: Fast model with batch processing (32 items/batch)
@@ -207,9 +207,9 @@ Loop for handling queries and prompt engineering
 ```python
 try:
     while True:
-        query = input("\n📝 You (e.g., 'What errors occurred in the last hour?'): ")
+        query = input("\nYou (e.g., 'What errors occurred in the last hour?'): ")
         if query.lower() in ("exit", "quit"):
-            print("👋 Bye! Take care.")
+            print("Exiting...")
             break
         
         # LLM prompt engineering This is what give the LLM it's context to formulate it's response
@@ -223,19 +223,19 @@ try:
             result = qa.invoke({"query": analysis_query})
             # ... display results ...
         except KeyboardInterrupt:
-            print("\n⏹️  Query processing interrupted. You can ask another question.")
+            print("\n Query processing interrupted. You can ask another question.")
             continue
 except KeyboardInterrupt:
-    print("\n\n👋 Goodbye! Exiting...")
+    print("\n\nGoodbye! Exiting...")
     sys.exit(0)
 ```
 
 
 #### **Response Display & Source Attribution**
 ```python
-print("\n🤖 Assistant:\n", result["result"])
+print("\nAssistant:\n", result["result"])
 
-print("\n📎 Sources:")
+print("\nSources:")
 for doc in result["source_documents"]:
     source = doc.metadata.get('source')
     line_number = doc.metadata.get('line_number')
@@ -265,7 +265,7 @@ _______________________________________________________________________________
                                                                                         
                                                                                           
                                                                                           
-➡️ Please enter the full path to the log directory (e.g., /home/user/support/):
+-> Please enter the full path to the log directory (e.g., /home/user/support/):
 ```
 Pass in the full directory to the log files you wish to query
 
@@ -273,11 +273,11 @@ Pass in the full directory to the log files you wish to query
 ### **Step 1: Document Processing**
 The log file will get processed output will look similar to below
 ```bash
-📄 Processing file 1: application.log
-   📊 Processed 10,000 lines...
-   📊 Processed 20,000 lines...
-   ✅ Completed: 45,123 lines processed
-📊 Summary: Processed 1 files, 45,123 total log entries
+Processing file 1: application.log
+   Processed 10,000 lines...
+   Processed 20,000 lines...
+   Completed: 45,123 lines processed
+Summary: Processed 1 files, 45,123 total log entries
 ```
 **What happens:**
 - Each log line becomes a separate document
@@ -287,12 +287,12 @@ The log file will get processed output will look similar to below
 #### **Step 2: Vector Database Creation**
 Next the database is created. 
 ```bash
-🧠 Creating vector database with 45,123 log entries...
-⏳ This may take several minutes for large files...
-🔄 Vector database already exists. Rebuild? (y/n): y
-🚀 Using optimized embedding model for faster processing...
-📊 Generating embeddings...
-✅ Vector database created successfully
+Creating vector database with 45,123 log entries...
+This may take several minutes for large files...
+Vector database already exists. Rebuild? (y/n): y
+Using optimized embedding model for faster processing...
+Generating embeddings...
+Vector database created successfully
 ```
 **What happens:**
 - Each log line gets converted into a unique numerical "fingerprint" (384 numbers)
@@ -303,20 +303,20 @@ Next the database is created.
 
 Once the vector database is successfully built, you can query the LLM to get answers based on the loaded log files.
 ```bash
-✅ Vector database loaded successfully
-🤖 Log Analyser Assistant ready. Type your question below. Type 'exit' to quit.
+Vector database loaded successfully
+Log Analyser Assistant ready. Type your question below. Type 'exit' to quit.
 
-📝 You (e.g., 'What errors occurred in the last hour?'): 
+You (e.g., 'What errors occurred in the last hour?'): 
 ```
 
 
 Sample response
 ```bash
-🤖 Log Analyser Assistant ready. Type your question below.
+Log Analyser Assistant ready. Type your question below.
 
-📝 You: What errors occurred in the last hour?
+You: What errors occurred in the last hour?
 
-🤖 Assistant:
+Assistant:
 Based on the log entries, I found several errors in the last hour:
 
 1. **Database Connection Error** (2 occurrences)
@@ -329,7 +329,7 @@ Based on the log entries, I found several errors in the last hour:
    - Error: "Invalid credentials for user admin"
    - Severity: WARNING
 
-📎 Sources:
+Sources:
  - /var/log/application.log (Line 1247)
  - /var/log/application.log (Line 1253)
  - /var/log/application.log (Line 1289)
