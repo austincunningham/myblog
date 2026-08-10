@@ -1,5 +1,7 @@
 # Agentic AI - Let Ollama Write and Run Your Python, A Local Code Generator
 
+![](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/apw94e2ibvs3clf3l8e6.png)
+
 Up until this point I have mostly used Ollama as an API that returned answers. I wanted a basic understanding of agentic AI. You give it a goal of creating code, point it at a folder under `~/repo`, and let a model on my machine write and run Python until the job looks done.
 
 No cloud API keys, no burning tokens. Just [Ollama](https://ollama.com), a few Python files, and tool calling.

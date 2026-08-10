@@ -42,41 +42,7 @@
         
         <div style="margin-top: 10px; text-align: center;">
           <a href="/privacy-policy" style="color: #3498db; font-size: 12px;">Privacy Policy</a> |
-          <a href="/cookie-policy" style="color: #3498db; font-size: 12px;">Cookie Policy</a> |
-          <button @click="showSettings = !showSettings" style="background: none; border: none; color: #3498db; font-size: 12px; cursor: pointer; text-decoration: underline;">
-            Cookie Settings
-          </button>
-        </div>
-      </div>
-
-      <!-- Cookie Settings Modal -->
-      <div v-show="showSettings" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1001; display: flex; align-items: center; justify-content: center;">
-        <div style="background: white; padding: 30px; border-radius: 8px; max-width: 600px; max-height: 80vh; overflow-y: auto;">
-          <h3>Cookie Settings</h3>
-          <p>Manage your cookie preferences below:</p>
-          
-          <div style="margin-bottom: 20px;">
-            <h4>Essential Cookies (Required)</h4>
-            <p style="font-size: 14px; color: #666;">These cookies are necessary for the website to function and cannot be switched off.</p>
-            <div style="display: flex; align-items: center;">
-              <span style="color: #27ae60; margin-right: 8px;">✓</span>
-              <span>Site functionality, security, and session management</span>
-            </div>
-          </div>
-          
-          <div style="margin-bottom: 20px;">
-            <h4>Analytics Cookies</h4>
-            <p style="font-size: 14px; color: #666;">These help us understand how visitors interact with our website.</p>
-            <label style="display: flex; align-items: center;">
-              <input type="checkbox" v-model="analyticsConsent" style="margin-right: 8px;">
-              Google Analytics - Usage statistics and site improvement
-            </label>
-          </div>
-          
-          <div style="display: flex; gap: 10px; justify-content: flex-end;">
-            <button @click="showSettings = false" class="ui button">Cancel</button>
-            <button @click="saveSettings" class="ui primary button">Save Settings</button>
-          </div>
+          <a href="/cookie-policy" style="color: #3498db; font-size: 12px;">Cookie Policy</a>
         </div>
       </div>
       <script type="application/javascript" defer language="javascript">
@@ -108,7 +74,6 @@ export default {
   data() {
     return {
       showCookieBanner: false,
-      showSettings: false,
       analyticsConsent: true,
       onHover: false
     }
@@ -144,14 +109,6 @@ export default {
     rejectAll() {
       this.analyticsConsent = false;
       this.saveConsent();
-    },
-    
-    saveSettings() {
-      this.saveConsent();
-      this.showSettings = false;
-      if (this.analyticsConsent) {
-        this.loadGoogleAnalytics();
-      }
     },
     
     saveConsent() {
