@@ -5,6 +5,12 @@
             "date": "August 10, 2026",
             "description": "A small local agent that can read, write, and run Python files under ~/repo using Ollama tool calls — and what I learned when the model faked those calls.",
             "title": "Agentic AI - Let Ollama Write and Run Your Python, A Local Code Generator"
+        },
+        {
+            "id": "jan-vs-ollama",
+            "date": "November 13, 2026",
+            "description": "A comparison of Jan.ai and Ollama for local AI development",
+            "title": "Jan.ai vs Ollama - A Comparison of Local AI Development"
         }
     ],
     "2025":[
