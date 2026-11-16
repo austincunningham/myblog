@@ -24,7 +24,7 @@ Jan.ai includes a local API server. In Jan, go to Settings → Local API Server,
 
 ![enable API Server image](https://dev-to-uploads.s3.us-east-2.amazonaws.com/uploads/articles/j73ovp1po8mdglgui5nx.gif)
 
-The default address is http://127.0.0.1:1337/v1. You can set an API key in the server settings; if you leave it blank, omit the authorization header. From a terminal you can curl, or access it in code.
+The default address is http://127.0.0.1:1337/v1. You can set an API key in the server settings, if you leave it blank, omit the authorization header. From a terminal you can curl, or access it in code.
 
 ```bash
 curl http://127.0.0.1:1337/v1/chat/completions \
